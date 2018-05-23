@@ -54,6 +54,7 @@ export default {
     restart () {
       this.isOver = false
       this.blockColor = []
+      this.source = 0
       this.changeDragBlock()
     },
     hasColor (index) {
@@ -88,12 +89,12 @@ export default {
     },
     move (e) {
       this.moveBlock.style.position = 'fixed'
-      this.moveBlock.style.top = e.touches[0].pageY + 'px'
-      this.moveBlock.style.left = e.touches[0].pageX + 'px'
+      this.moveBlock.style.top = e.touches[0].pageY - 30 + 'px'
+      this.moveBlock.style.left = e.touches[0].pageX - 30 + 'px'
     },
     end (e) {
-      let x = Math.round((e.changedTouches[0].pageX - (window.innerWidth - 320) / 2 + 30) / 32)
-      let y = Math.round((e.changedTouches[0].pageY + 30) / 32) * 10
+      let x = Math.round((e.changedTouches[0].pageX - (window.innerWidth - 320) / 2) / 32)
+      let y = Math.round((e.changedTouches[0].pageY) / 32) * 10
       let index = y + x - 1
       this.pushBlock(index)
       this.moveBlock.style.position = 'static'
