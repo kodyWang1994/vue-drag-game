@@ -88,7 +88,7 @@ export default {
       this.moveBlock = this.$refs.moveBlock
     },
     move (e) {
-      e.preventdefault()
+      e.preventDefault()
       this.moveBlock.style.position = 'fixed'
       this.moveBlock.style.top = e.touches[0].pageY - 30 + 'px'
       this.moveBlock.style.left = e.touches[0].pageX - 30 + 'px'
