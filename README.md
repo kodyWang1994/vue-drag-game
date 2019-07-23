@@ -1,21 +1,7 @@
 # vue-game-demo
 
-> A Vue.js project
+> 本项目是用vue开发的小游戏demo，如若想体验更多小游戏请移步：https://github.com/kodyWang1994/game-box
 
-## Build Setup
+> 基于mp-vue的微信小程序版：https://github.com/kodyWang1994/game-box-mp
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> 点击体验更多小游戏：https://kodywang1994.github.io/game-box/dist/index.html#/
