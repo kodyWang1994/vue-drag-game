@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "underscore": "^1.9.0",
+    "underscore": "^1.12.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
